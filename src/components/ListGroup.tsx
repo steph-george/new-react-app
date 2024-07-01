@@ -4,7 +4,7 @@ function ListGroup() {
     <>
       <h1>List</h1>
       {items.map((item) => (
-        <li>{item}</li>
+        <li key={item}>{item}</li>
       ))}
     </>
   );
