@@ -3,9 +3,16 @@ function ListGroup() {
   return (
     <>
       <h1>List</h1>
-      {items.map((item) => (
-        <li key={item}>{item}</li>
-      ))}
+      <ul className="list-group">
+        {items.map((item) => (
+          <li className="list-group-item" key={item}>
+            {item}
+          </li>
+        ))}
+        {items.length > 0
+          ? "There are total " + items.length + " items in the list"
+          : "There are 0 items in the list"}
+      </ul>
     </>
   );
 }
