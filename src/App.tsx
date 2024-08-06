@@ -1,4 +1,5 @@
-import ListGroup from "./components/ListGroup";
+import ListGroup from "./components/ListGroup/ListGroup";
+import "./App.css";
 
 function App() {
   const items = ["Mumbai", "Chennai", "Kolkata", "Bangalore", "Delhi"];
